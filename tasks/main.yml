@@ -1,0 +1,72 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: check for install
+  become: yes
+  stat:
+    path: '{{ pulumi_install_dir }}'
+  changed_when: False
+  register: pulumi_binary
+- when: not pulumi_binary.stat.exists
+  block:
+    - name: download
+      become: yes
+      become_user: root
+      get_url:
+        url: '{{ pulumi_url }}'
+        dest: /tmp/{{ pulumi_archive }}
+        mode: 0644
+        checksum: '{{ pulumi_checksum }}'
+    - name: mkdir
+      become: yes
+      become_user: root
+      file:
+        path: '{{ pulumi_install_dir }}'
+        mode: 0755
+        state: directory
+    - name: unarchive
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: /tmp/{{ pulumi_archive }}
+        dest: '{{ pulumi_install_dir }}'
+        creates: '{{ pulumi_install_dir }}/pulumi'
+    - name: fix permissions
+      become: yes
+      become_user: root
+      file:
+        path: '{{ pulumi_install_dir }}/pulumi'
+        mode: 0755
+  always:
+    - name: cleanup
+      become: yes
+      become_user: root
+      file:
+        path: /tmp/{{ pulumi_archive }}
+        state: absent
+- name: link
+  become: yes
+  become_user: root
+  file:
+    src: '{{ pulumi_install_dir }}/pulumi'
+    dest: '{{ pulumi_link_dir }}'
+    state: link
+- name: add to default path
+  become: yes
+  become_user: root
+  with_items:
+    - f: pulumi.sh
+      d: /etc/profile.d
+  template:
+    src: '{{ item.f }}.j2'
+    dest: '{{ item.d }}/{{ item.f }}'
+    mode: '{{ item.m | default("0644") }}'
