@@ -30,14 +30,4 @@ dlver () {
     dl $ver windows x64 zip
 }
 
-dlver v1.0.0
-dlver v1.1.0
-dlver v1.2.0
-dlver v1.3.0
-dlver v1.3.1
-dlver v1.3.3
-dlver v1.3.4
-dlver v1.4.0
-dlver v1.4.1
-dlver v1.5.1
-#dlver ${1:-v1.15.1}
+dlver ${1:-v1.6.0}
