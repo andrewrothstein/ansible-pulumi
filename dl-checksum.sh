@@ -1,4 +1,5 @@
 #!/usr/bin/env sh
+set -e
 DIR=~/Downloads
 MIRROR=https://get.pulumi.com/releases/sdk
 
@@ -30,4 +31,4 @@ dlver () {
     dl $ver windows x64 zip
 }
 
-dlver ${1:-v2.9.1}
+dlver ${1:-v2.10.0}
