@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v2.10.1
+pulumi_ver: v2.10.2
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_os: linux
@@ -289,3 +289,10 @@ pulumi_checksums:
     darwin-x64: sha256:1b32155e40d7fa19c3e904ed264063c12bddf298bb159196779a45d0a347f660
     # https://get.pulumi.com/releases/sdk/pulumi-v2.10.1-windows-x64.zip
     windows-x64: sha256:51f83a5e36332d577bb1da3c3a0634bf1cc633a426e0be4ee5d1d84cb74ed806
+  v2.10.2:
+    # https://get.pulumi.com/releases/sdk/pulumi-v2.10.2-linux-x64.tar.gz
+    linux-x64: sha256:63ab1ffe8acfa83a285a9358fb3b9f54fb1c8713378645d82f4628583748b55f
+    # https://get.pulumi.com/releases/sdk/pulumi-v2.10.2-darwin-x64.tar.gz
+    darwin-x64: sha256:1c00330f2f1d6223988649e66f528bf3a798b6299dc29abbde37d77b3af5f8bb
+    # https://get.pulumi.com/releases/sdk/pulumi-v2.10.2-windows-x64.zip
+    windows-x64: sha256:704ee17ce5f60c70148e79e90978f09c2aa567e6965815233c23e2cea2e4876e
