@@ -303,3 +303,10 @@ pulumi_checksums:
     darwin-x64: sha256:fd2f410819a6820965bd03d226aa40e387855a9b0c8f925741e470e4a407401d
     # https://get.pulumi.com/releases/sdk/pulumi-v2.11.1-windows-x64.zip
     windows-x64: sha256:7516cb6360d639f5ca0d1ef4ba80319274e8cf8395a43b58be1243dc9a5befd0
+  v2.11.2:
+    # https://get.pulumi.com/releases/sdk/pulumi-v2.11.2-linux-x64.tar.gz
+    linux-x64: sha256:1d0a8ab61e9a72a65cb1f07bea2a18a54f3ca2f4a1b327f9ab97a7247126060b
+    # https://get.pulumi.com/releases/sdk/pulumi-v2.11.2-darwin-x64.tar.gz
+    darwin-x64: sha256:383a2f9f2993f033d19743a73ffcf696ff443acf9e6c2181737ea333a26994d8
+    # https://get.pulumi.com/releases/sdk/pulumi-v2.11.2-windows-x64.zip
+    windows-x64: sha256:ec90ec624412ab641bdcf2e0c613dd610cb733094ebecaedb3108a6fc704241b
