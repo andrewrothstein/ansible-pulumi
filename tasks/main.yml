@@ -9,7 +9,7 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: check for install
+- name: check for install in {{ pulumi_install_dir }}
   become: yes
   stat:
     path: '{{ pulumi_install_dir }}'
@@ -17,47 +17,47 @@
   register: pulumi_binary
 - when: not pulumi_binary.stat.exists
   block:
-    - name: download
+    - name: downloading {{ pulumi_url }}
       become: yes
       become_user: root
       get_url:
         url: '{{ pulumi_url }}'
-        dest: /tmp/{{ pulumi_archive }}
+        dest: '{{ pulumi_tmp_archive }}'
         mode: 0644
         checksum: '{{ pulumi_checksum }}'
-    - name: mkdir
+    - name: mkdir {{ pulumi_install_dir }}
       become: yes
       become_user: root
       file:
         path: '{{ pulumi_install_dir }}'
         mode: 0755
         state: directory
-    - name: unarchive
+    - name: unarchive to {{pulumi_install_dir }}
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
         src: /tmp/{{ pulumi_archive }}
         dest: '{{ pulumi_install_dir }}'
-        creates: '{{ pulumi_install_dir }}/pulumi'
-    - name: fix permissions
+        creates: '{{ pulumi_install_exe }}'
+    - name: fix permissions on {{ pulumi_install_exe }}
       become: yes
       become_user: root
       file:
-        path: '{{ pulumi_install_dir }}/pulumi'
+        path: '{{ pulumi_install_exe }}'
         mode: 0755
   always:
-    - name: cleanup
+    - name: cleanup {{ pulumi_tmp_archive }}
       become: yes
       become_user: root
       file:
-        path: /tmp/{{ pulumi_archive }}
+        path: '{{ pulumi_tmp_archive }}'
         state: absent
 - name: link
   become: yes
   become_user: root
   file:
-    src: '{{ pulumi_install_dir }}/pulumi'
+    src: '{{ pulumi_install_exe }}'
     dest: '{{ pulumi_link_dir }}'
     state: link
 - name: add to default path
