@@ -6,5 +6,5 @@ pulumi_tmp_archive: /tmp/{{ pulumi_archive }}
 pulumi_url: '{{ pulumi_mirror }}/{{ pulumi_archive }}'
 pulumi_checksum: '{{ pulumi_checksums[pulumi_ver][pulumi_platform] }}'
 pulumi_install_dir: '{{ pulumi_parent_install_dir }}/pulumi-{{ pulumi_ver }}'
-pulumi_install_exe: '{{ pulumi_install_dir }}/pulumi'
+pulumi_install_subdir: '{{ pulumi_install_dir }}/pulumi'
 pulumi_link_dir: '{{ pulumi_parent_install_dir }}/pulumi'

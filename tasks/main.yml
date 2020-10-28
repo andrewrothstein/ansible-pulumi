@@ -40,11 +40,11 @@
         src: /tmp/{{ pulumi_archive }}
         dest: '{{ pulumi_install_dir }}'
         creates: '{{ pulumi_install_exe }}'
-    - name: fix permissions on {{ pulumi_install_exe }}
+    - name: fix permissions on {{ pulumi_install_subdir }}
       become: yes
       become_user: root
       file:
-        path: '{{ pulumi_install_exe }}'
+        path: '{{ pulumi_install_subdir }}'
         mode: 0755
   always:
     - name: cleanup {{ pulumi_tmp_archive }}
@@ -53,11 +53,11 @@
       file:
         path: '{{ pulumi_tmp_archive }}'
         state: absent
-- name: link
+- name: linking {{ pulumi_link_dir }} to {{ pulumi_install_subdir }}
   become: yes
   become_user: root
   file:
-    src: '{{ pulumi_install_exe }}'
+    src: '{{ pulumi_install_subdir }}'
     dest: '{{ pulumi_link_dir }}'
     state: link
 - name: add to default path
