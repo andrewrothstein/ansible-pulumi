@@ -32,14 +32,14 @@
         path: '{{ pulumi_install_dir }}'
         mode: 0755
         state: directory
-    - name: unarchive to {{pulumi_install_dir }}
+    - name: unarchive to {{ pulumi_install_dir }}
       become: yes
       become_user: root
       unarchive:
         remote_src: yes
-        src: /tmp/{{ pulumi_archive }}
+        src: '{{ pulumi_tmp_archive }}'
         dest: '{{ pulumi_install_dir }}'
-        creates: '{{ pulumi_install_exe }}'
+        creates: '{{ pulumi_install_subdir }}'
     - name: fix permissions on {{ pulumi_install_subdir }}
       become: yes
       become_user: root
