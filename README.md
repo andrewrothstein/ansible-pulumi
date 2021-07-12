@@ -1,6 +1,6 @@
 andrewrothstein.pulumi
 =========
-[![Build Status](https://travis-ci.org/andrewrothstein/ansible-pulumi.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-pulumi)
+![Build Status](https://github.com/andrewrothstein/ansible-pulumi/actions/workflows/build.yml/badge.svg)
 
 Installs [pulumi](https://www.pulumi.com/).
 
