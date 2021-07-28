@@ -10,7 +10,7 @@ dl()
     local arch=$3
     local archive_type=${4:-tar.gz}
     local platform="$os-$arch"
-    local file=pulumi-$ver-$platform.$archive_type
+    local file=pulumi-v$ver-$platform.$archive_type
     local url=$MIRROR/$file
     local lfile=$DIR/$file
 
@@ -25,10 +25,10 @@ dl()
 
 dlver () {
     local ver=$1
-    printf "  %s:\n" $ver
+    printf "  v%s:\n" $ver
     dl $ver linux x64
     dl $ver darwin x64
     dl $ver windows x64 zip
 }
 
-dlver ${1:-v3.7.1}
+dlver ${1:-3.9.0}
