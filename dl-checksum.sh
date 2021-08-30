@@ -31,4 +31,4 @@ dlver () {
     dl $ver windows x64 zip
 }
 
-dlver ${1:-3.10.3}
+dlver ${1:-3.11.0}
