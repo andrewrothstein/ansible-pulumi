@@ -26,9 +26,11 @@ dl()
 dlver () {
     local ver=$1
     printf "  v%s:\n" $ver
+    dl $ver linux arm64
     dl $ver linux x64
+    dl $ver darwin arm64
     dl $ver darwin x64
     dl $ver windows x64 zip
 }
 
-dlver ${1:-3.25.1}
+dlver ${1:-3.26.1}
