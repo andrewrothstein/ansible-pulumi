@@ -1,5 +1,7 @@
 ---
 # vars file for pulumi
+pulumi_os: '{{ ansible_system | lower }}'
+pulumi_arch: '{{ pulumi_arch_map[ansible_architecture] }}'
 pulumi_platform: '{{ pulumi_os }}-{{ pulumi_arch }}'
 pulumi_archive: pulumi-{{ pulumi_ver }}-{{ pulumi_platform }}.{{ pulumi_archive_type | default("tar.gz") }}
 pulumi_tmp_archive: /tmp/{{ pulumi_archive }}
