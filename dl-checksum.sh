@@ -31,6 +31,7 @@ dlver () {
     dl $ver darwin arm64
     dl $ver darwin x64
     dl $ver windows x64 zip
+    dl $ver windows arm64 zip
 }
 
-dlver ${1:-3.40.2}
+dlver ${1:-3.43.1}
