@@ -1,6 +1,6 @@
 ---
 - include_role:
-    name: andrewrothstein.unarchive-deps
+    name: andrewrothstein.unarchivedeps
 - name: resolve platform specific vars
   include_vars: '{{ item }}'
   with_first_found:
@@ -12,7 +12,7 @@
       paths:
         - '{{ role_path }}/vars'
 - name: check for install in {{ pulumi_install_dir }}
-  become: yes
+  become: true
   stat:
     path: '{{ pulumi_install_dir }}'
   changed_when: False
@@ -20,7 +20,7 @@
 - when: not pulumi_binary.stat.exists
   block:
     - name: downloading {{ pulumi_url }}
-      become: yes
+      become: true
       become_user: root
       get_url:
         url: '{{ pulumi_url }}'
@@ -28,42 +28,42 @@
         mode: 0644
         checksum: '{{ pulumi_checksum }}'
     - name: mkdir {{ pulumi_install_dir }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ pulumi_install_dir }}'
         mode: 0755
         state: directory
     - name: unarchive to {{ pulumi_install_dir }}
-      become: yes
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
+        remote_src: true
         src: '{{ pulumi_tmp_archive }}'
         dest: '{{ pulumi_install_dir }}'
         creates: '{{ pulumi_install_subdir }}'
     - name: fix permissions on {{ pulumi_install_subdir }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ pulumi_install_subdir }}'
         mode: 0755
   always:
     - name: cleanup {{ pulumi_tmp_archive }}
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ pulumi_tmp_archive }}'
         state: absent
 - name: linking {{ pulumi_link_dir }} to {{ pulumi_install_subdir }}
-  become: yes
+  become: true
   become_user: root
   file:
     src: '{{ pulumi_install_subdir }}'
     dest: '{{ pulumi_link_dir }}'
     state: link
 - name: add to default path
-  become: yes
+  become: true
   become_user: root
   with_items:
     - f: pulumi.sh
