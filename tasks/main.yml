@@ -15,7 +15,7 @@
   become: true
   stat:
     path: '{{ pulumi_install_dir }}'
-  changed_when: False
+  changed_when: false
   register: pulumi_binary
 - when: not pulumi_binary.stat.exists
   block:
