@@ -1,8 +1,9 @@
 ---
-- include_role:
+- name: Installing andrewrothstein.unarchivedeps
+  ansible.builtin.include_role:
     name: andrewrothstein.unarchivedeps
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
+- name: Resolve platform specific vars
+  ansible.builtin.include_vars: '{{ item }}'
   with_first_found:
     - files:
         - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
@@ -11,64 +12,65 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: check for install in {{ pulumi_install_dir }}
+- name: Check for install in {{ pulumi_install_dir }}
   become: true
-  stat:
+  ansible.builtin.stat:
     path: '{{ pulumi_install_dir }}'
   changed_when: false
   register: pulumi_binary
-- when: not pulumi_binary.stat.exists
+- name: Downloading and installing pulumi
+  when: not pulumi_binary.stat.exists
   block:
-    - name: downloading {{ pulumi_url }}
+    - name: Downloading {{ pulumi_url }}
       become: true
       become_user: root
-      get_url:
+      ansible.builtin.get_url:
         url: '{{ pulumi_url }}'
         dest: '{{ pulumi_tmp_archive }}'
-        mode: 0644
+        mode: '644'
         checksum: '{{ pulumi_checksum }}'
-    - name: mkdir {{ pulumi_install_dir }}
+    - name: Mkdir {{ pulumi_install_dir }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ pulumi_install_dir }}'
-        mode: 0755
+        mode: '755'
         state: directory
-    - name: unarchive to {{ pulumi_install_dir }}
+    - name: Unarchive to {{ pulumi_install_dir }}
       become: true
       become_user: root
-      unarchive:
+      ansible.builtin.unarchive:
         remote_src: true
         src: '{{ pulumi_tmp_archive }}'
         dest: '{{ pulumi_install_dir }}'
         creates: '{{ pulumi_install_subdir }}'
-    - name: fix permissions on {{ pulumi_install_subdir }}
+    - name: Fix permissions on {{ pulumi_install_subdir }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ pulumi_install_subdir }}'
-        mode: 0755
+        mode: '755'
   always:
-    - name: cleanup {{ pulumi_tmp_archive }}
+    - name: Cleanup {{ pulumi_tmp_archive }}
       become: true
       become_user: root
-      file:
+      ansible.builtin.file:
         path: '{{ pulumi_tmp_archive }}'
         state: absent
-- name: linking {{ pulumi_link_dir }} to {{ pulumi_install_subdir }}
+- name: Linking {{ pulumi_link_dir }} to {{ pulumi_install_subdir }}
   become: true
   become_user: root
-  file:
+  ansible.builtin.file:
     src: '{{ pulumi_install_subdir }}'
     dest: '{{ pulumi_link_dir }}'
     state: link
-- name: add to default path
+- name: Add to default path
   become: true
   become_user: root
   with_items:
     - f: pulumi.sh
       d: /etc/profile.d
-  template:
+  ansible.builtin.template:
     src: '{{ item.f }}.j2'
     dest: '{{ item.d }}/{{ item.f }}'
     mode: '{{ item.m | default("0644") }}'

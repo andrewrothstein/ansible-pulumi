@@ -1,10 +1,14 @@
 ---
-- hosts: all
-  roles:
-  - role: '{{ playbook_dir }}'
+- name: Testing andrewrothstein.pulumi
+  hosts: all
   tasks:
-  - command: /usr/local/pulumi/pulumi version
-    register: pulumi_test_output
-  - name: pulumi version
-    debug:
-      msg: '{{ pulumi_test_output.stdout }}'
+    - name: Installing andrewrothstein.pulumi
+      ansible.builtin.include_role:
+        name: '{{ playbook_dir }}'
+    - name: Executing 'pulumi version'
+      ansible.builtin.command: /usr/local/pulumi/pulumi version
+      changed_when: false
+      register: pulumi_test_output
+    - name: Output from 'pulumi version'
+      ansible.builtin.debug:
+        msg: '{{ pulumi_test_output.stdout }}'
