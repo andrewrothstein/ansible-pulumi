@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.120.0
+pulumi_ver: v3.121.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -1606,3 +1606,16 @@ pulumi_checksums:
     windows-x64: sha256:69a5cdc1034fd47d6bccb064f7e00981235423cd9aa3f6df6aef9e5760345939
     # https://get.pulumi.com/releases/sdk/pulumi-v3.120.0-windows-arm64.zip
     windows-arm64: sha256:e2f392530ecd029de7ef3e987c9bb8dd076f392061cafed6589074e2ddb10f90
+  v3.121.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.121.0-linux-arm64.tar.gz
+    linux-arm64: sha256:f4a2ef230fa44ae59fcaea6db71a71d2b6f74d6fb0e7116605ef12b520bff5e2
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.121.0-linux-x64.tar.gz
+    linux-x64: sha256:f3171d857c538900731416e79ff2d9c92bea93170eab5d29053fb703f2278793
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.121.0-darwin-arm64.tar.gz
+    darwin-arm64: sha256:7da0819582cfa29bbdd1561e9b296b0c0f7e0eb5c3b87f47b777892bd8841f30
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.121.0-darwin-x64.tar.gz
+    darwin-x64: sha256:7dcdd88e53ee0917880d5374314424394aeea18df756045c402124d190b4efb2
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.121.0-windows-x64.zip
+    windows-x64: sha256:b1f1d4f6583d119ddc1a0a438dc35801213ab6ac5a8dab7d0c740787a5c60eaa
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.121.0-windows-arm64.zip
+    windows-arm64: sha256:45dee7a00cacca669922c68598b48762ecb1037083f33c19351a1000a89243b8
