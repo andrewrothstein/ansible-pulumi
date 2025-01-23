@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.145.0
+pulumi_ver: v3.146.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -1919,3 +1919,17 @@ pulumi_checksums:
     windows-x64: sha512:fafb7aa23427da2ad495b2f26cdfee8cfefab1317338b2573c4fc12d0cbecb9b88f6afbe892b42c2ceafc89a295b89970d21d9f899b3fbb71c79cc5e992ad86d
     # https://get.pulumi.com/releases/sdk/pulumi-v3.145.0-windows-arm64.zip
     windows-arm64: sha512:17d62dd87261a66d11b15f07801a666569fd9206a2a153a75c416552d10936c53373ff25424343b8d3a145e03d1c233d88a521a8fa4f9792ff1f770baadf6a4b
+  # https://github.com/pulumi/pulumi/releases/download/v3.146.0/SHA512SUMS
+  v3.146.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.146.0-linux-arm64.tar.gz
+    linux-arm64: sha512:765f9ff8804fe7e3a0a0af86b3a945b489a74d09a93146abdd4be8036d1443c2b781447ec82978442a8a97c4646d0d9737774309afdb558f6d3e6071a7d4a8d2
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.146.0-linux-x64.tar.gz
+    linux-x64: sha512:9ed651f6ae33aa04ee9c6d0523b27f05a110432c551412c56edb7f54b6c252f868f123dbb460d0876d4b16a02aa06293e950a226462bf644e65f9fdee53cbe27
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.146.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:d7788d0c37c07953199e3c8451ef7bb741563f8e9c5bcbe103bb8d80ba363ac52375d23b5d592cd8d916077ef479707f81e66178baa6244fe7beaf37131f14cf
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.146.0-darwin-x64.tar.gz
+    darwin-x64: sha512:f69d9fb9a52106fe0c995c7510c34468a0efbf445860fddd66ce5bd845b81658a9dd6ccf43696ebbae835305fd673ac03948ee22ba7aa448cfbec4c2c5b6a9e9
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.146.0-windows-x64.zip
+    windows-x64: sha512:70ee0bf07b51c12da1d1b2443be3bce11f39dd49fc4bc098c64eeefe7cf8dca2c82d9767ddfc8199b71f8cd5e32d3ef91fe26f6680ee0d9e772362629e4d7017
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.146.0-windows-arm64.zip
+    windows-arm64: sha512:d753d390c6b298a94aae0485b3959912185df9bcdb0adfc1cff88bddd1eb7d4a32de6e12e9eb67cdf4d2205e91e3c0a88b58b7bab439003171280f29c57f54b8
