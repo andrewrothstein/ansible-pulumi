@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.146.0
+pulumi_ver: v3.147.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -1933,3 +1933,17 @@ pulumi_checksums:
     windows-x64: sha512:70ee0bf07b51c12da1d1b2443be3bce11f39dd49fc4bc098c64eeefe7cf8dca2c82d9767ddfc8199b71f8cd5e32d3ef91fe26f6680ee0d9e772362629e4d7017
     # https://get.pulumi.com/releases/sdk/pulumi-v3.146.0-windows-arm64.zip
     windows-arm64: sha512:d753d390c6b298a94aae0485b3959912185df9bcdb0adfc1cff88bddd1eb7d4a32de6e12e9eb67cdf4d2205e91e3c0a88b58b7bab439003171280f29c57f54b8
+  # https://github.com/pulumi/pulumi/releases/download/v3.147.0/SHA512SUMS
+  v3.147.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.147.0-linux-arm64.tar.gz
+    linux-arm64: sha512:c5874cd86a21c48fd6f45fb4adea510f456c40b39681498f520761d4a3c49b1aa79d9b6bfce97011e846b607240bde5b185a0c19dc48a5863b8564ce1b380f49
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.147.0-linux-x64.tar.gz
+    linux-x64: sha512:22cdbf4f1a66b478dff26e4b7f79cdcbd25818e9e4f0c372626b442b68c9e2fb8d3181ad7e0f7ff89dfcca95335e5ec00c8fbb6802e1fe8acde681a0e3fe6b36
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.147.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:699e9ba7a9af29263f4216f29f8c87859b341021657f021e91c6319efda6000286d55f1552ef264abadce6f3b6003140553566196ebe29f5a27ba6c0f1c8e6b9
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.147.0-darwin-x64.tar.gz
+    darwin-x64: sha512:2d94dc01bcc2a16a94c5ebf05d4a741b24e11a9ee5408b907c07df058adac846854b2966e6fdf71f9ccaeb550ed1ef2be58a67201494d21932e99ab589501a06
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.147.0-windows-x64.zip
+    windows-x64: sha512:769f72098ea8a784926d9645ed18d65fa1cb0e2d7f02046c8436ee44564915eb8e51a7b3ab67bce895c01d56e53547df26f57eaf7f49f00fcd92071cc3dc6c7e
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.147.0-windows-arm64.zip
+    windows-arm64: sha512:4c9a855227dcb8f8278d36dbee53f6bd200bf91c9688c47844a4e880fc9752cf41532d4779d1d4a138789ee851c204e01b9031ef5b79a381527333373745806b
