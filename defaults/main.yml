@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.147.0
+pulumi_ver: v3.148.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -1947,3 +1947,17 @@ pulumi_checksums:
     windows-x64: sha512:769f72098ea8a784926d9645ed18d65fa1cb0e2d7f02046c8436ee44564915eb8e51a7b3ab67bce895c01d56e53547df26f57eaf7f49f00fcd92071cc3dc6c7e
     # https://get.pulumi.com/releases/sdk/pulumi-v3.147.0-windows-arm64.zip
     windows-arm64: sha512:4c9a855227dcb8f8278d36dbee53f6bd200bf91c9688c47844a4e880fc9752cf41532d4779d1d4a138789ee851c204e01b9031ef5b79a381527333373745806b
+  # https://github.com/pulumi/pulumi/releases/download/v3.148.0/SHA512SUMS
+  v3.148.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.148.0-linux-arm64.tar.gz
+    linux-arm64: sha512:eed7333dc61de0f1aa2412b85fd01293a50b1ac4ea12f19271157478727875046c06ba2d0577c0f569ed0759d230879dc547bc7f2f0af65d9293949a282d3faf
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.148.0-linux-x64.tar.gz
+    linux-x64: sha512:8327f5c6816eb078d280cff265e1bc19c6912f5da4fe924dc3dcbf7a8d1dcb81c2bea1121d3ffcc22f7febfba35a8b50151a908bd17459e4bac3966da253ae88
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.148.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:07706cf79856e9ef5d43c547188a0f47455063c596816b93075e2a1d74de7d150a868675143c55363470d6c0ddf4135151af41d2bb4d8f78d94ddf7fb9a972cd
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.148.0-darwin-x64.tar.gz
+    darwin-x64: sha512:c224ad74bb76a26ff7d54e529ffe1f680c9b5810cd1b199f7fa04a0624378ba002d1bb8029302575170b717f55674b297433aa03dc33a1250534dfea0f9ed24c
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.148.0-windows-x64.zip
+    windows-x64: sha512:d085c5538562a41d54d47b6a23cf72056c47262fb4eec5f08ee40f25415a749036a2aa2ff6476da432e9b7520fa75e7876a1c9fe5642b9c4e53fdbd46295e2b7
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.148.0-windows-arm64.zip
+    windows-arm64: sha512:04678bf63ac6db9572165785528e9d23544bca177f38b6fe9f64ac2f5f7b2a5db0a8378f5c94945923c37049269c491362a859d401d1947efa9414b4aecea2a3
