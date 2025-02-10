@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.148.0
+pulumi_ver: v3.149.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -1961,3 +1961,17 @@ pulumi_checksums:
     windows-x64: sha512:d085c5538562a41d54d47b6a23cf72056c47262fb4eec5f08ee40f25415a749036a2aa2ff6476da432e9b7520fa75e7876a1c9fe5642b9c4e53fdbd46295e2b7
     # https://get.pulumi.com/releases/sdk/pulumi-v3.148.0-windows-arm64.zip
     windows-arm64: sha512:04678bf63ac6db9572165785528e9d23544bca177f38b6fe9f64ac2f5f7b2a5db0a8378f5c94945923c37049269c491362a859d401d1947efa9414b4aecea2a3
+  # https://github.com/pulumi/pulumi/releases/download/v3.149.0/SHA512SUMS
+  v3.149.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.149.0-linux-arm64.tar.gz
+    linux-arm64: sha512:1ad69882c81ac72ab152f3b2945809736feaa9484bb356783464777aca15c8c95d307be7f52d35d42cd4189d2d3b249cd6f01665dc21a0f86a112872ab34c4de
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.149.0-linux-x64.tar.gz
+    linux-x64: sha512:bff5b69d718e63104edad1eef6610bd6a955b622ae0fd3fc95d38e0f076124e72060d0e8e0bd7a207d8252d951700763f3b5499d68a68b6af1ee72d9f31ffc80
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.149.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:8c9a107148a29f55e967b6b9b487b55beccb4ddb5bd6a90d5e79a19148430580563c72c3911a5e82ba43c461429ecf78a892e0e6f53f72ddcdd7c0800ac33e68
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.149.0-darwin-x64.tar.gz
+    darwin-x64: sha512:1c2be1a717ba02255cbf1b6156c17ef067e620aa2013b8955b06917f91ca53b2e9283b2bff45c094336536ded50bf61e2670dcf21514e85a1e4169d8bdbe550c
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.149.0-windows-x64.zip
+    windows-x64: sha512:8fd4de0f0bc77a6e80b8fa6c16f06e95ac46396f446f56307bb9113ad8b63827cecc2334e785a55e19010d8fe1f162f609a9576a6493f367a6e64da2b67ddc68
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.149.0-windows-arm64.zip
+    windows-arm64: sha512:bb54d1fb7cc7d2c754a4497c5061155bd1b77e5c65a9855f1ceca4a40d4d1c02c686f9c7d6f581038eaf45c8887655945318d523df549eb9cdb41246ef3a4170
