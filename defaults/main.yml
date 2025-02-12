@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.149.0
+pulumi_ver: v3.150.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -1975,3 +1975,17 @@ pulumi_checksums:
     windows-x64: sha512:8fd4de0f0bc77a6e80b8fa6c16f06e95ac46396f446f56307bb9113ad8b63827cecc2334e785a55e19010d8fe1f162f609a9576a6493f367a6e64da2b67ddc68
     # https://get.pulumi.com/releases/sdk/pulumi-v3.149.0-windows-arm64.zip
     windows-arm64: sha512:bb54d1fb7cc7d2c754a4497c5061155bd1b77e5c65a9855f1ceca4a40d4d1c02c686f9c7d6f581038eaf45c8887655945318d523df549eb9cdb41246ef3a4170
+  # https://github.com/pulumi/pulumi/releases/download/v3.150.0/SHA512SUMS
+  v3.150.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.150.0-linux-arm64.tar.gz
+    linux-arm64: sha512:4c033ced08e11144377b125809175878bd1a2a5a42f2147cec15de302c5f02f75e733062094ab93db79333169e41a39e959feb02e46a2923d26bdd13cd5060c9
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.150.0-linux-x64.tar.gz
+    linux-x64: sha512:d4793cc345cec3962f17de7e76b8cd75dcfd172234d0fdc09fabef9631fd5334040356b9d1425d1d67976dac8cec61fdcc2ff57e20908819350e77a87a518bb8
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.150.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:4b2e4a4cc514e7a6f576cc35a36b821c0213e7361598649c76c9638212c570be32dfee9599734360a1c8943b11026b0e5a297cc32b6a613ddb12f718133c62ad
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.150.0-darwin-x64.tar.gz
+    darwin-x64: sha512:9a36d25b26e61852376b94fb635dba43e9f2b644cef42bbc3659da865da9464e6999a703c110019900848a05e516fa749bb1c0afe28fc39c2495d6cfab1db39d
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.150.0-windows-x64.zip
+    windows-x64: sha512:f1b7174a920311e04e48842ffcff4f46fecc07ca3c4125d8ea901b63269b8ecd82ff7e196b742d75bdaf747cd43900e029323c7fbcb391f69f6f74086bc4c41a
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.150.0-windows-arm64.zip
+    windows-arm64: sha512:3e1ebe04550333f6ccb638ed4e3bbfac0ee3667c839afd2b2e317ce267cc1b6c18853640b4bc8bd47b046927ab7324f1f821145bd2f4d32855abc9b4d52eb81b
