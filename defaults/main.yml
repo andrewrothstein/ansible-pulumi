@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.150.0
+pulumi_ver: v3.151.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -1989,3 +1989,17 @@ pulumi_checksums:
     windows-x64: sha512:f1b7174a920311e04e48842ffcff4f46fecc07ca3c4125d8ea901b63269b8ecd82ff7e196b742d75bdaf747cd43900e029323c7fbcb391f69f6f74086bc4c41a
     # https://get.pulumi.com/releases/sdk/pulumi-v3.150.0-windows-arm64.zip
     windows-arm64: sha512:3e1ebe04550333f6ccb638ed4e3bbfac0ee3667c839afd2b2e317ce267cc1b6c18853640b4bc8bd47b046927ab7324f1f821145bd2f4d32855abc9b4d52eb81b
+  # https://github.com/pulumi/pulumi/releases/download/v3.151.0/SHA512SUMS
+  v3.151.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.151.0-linux-arm64.tar.gz
+    linux-arm64: sha512:4c2d2574022c04c58ac160eabe4b7a0cb28b445dd2dd5cbd95f5e56648d7f1a922b73cf3c8aca24988ef6a9be53ed5fa5a8b3b73ced65ed25985d91778b739ff
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.151.0-linux-x64.tar.gz
+    linux-x64: sha512:633747ad782c627aeb506280be0c95a4e22b518faeb866b5c66049015b52b089a82d524613d7b68bd49eae0aceaa82c12e78d6342ba099ed037860a32cbb0ee6
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.151.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:fdf984c620bf427d1fc98f1e20f8ac081d22f33f84d1aa8bb695a035c2d05677325512789683f3d4efe88c2bdd5fe54fe391441e773cfa2f73992a2a6dd9a347
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.151.0-darwin-x64.tar.gz
+    darwin-x64: sha512:44cd74733360ba825e60f24cdb9c2a5d3a706d2c16659cdc7f7449be31b5d3565ec96746018f11a7a7b03e9ff0dbb9889a873d23269af811758f51a665ee2fb2
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.151.0-windows-x64.zip
+    windows-x64: sha512:4002c2ab877ffad351e6094d68d4553c2fcccd0e698b9b2597db2be2af34973c684fcf534a0be8e04303498f44c7c4feeaa77b088b39e6c79a776505c3bf6f6c
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.151.0-windows-arm64.zip
+    windows-arm64: sha512:5a17ee39d3577d6d656063573fbfc040735bd53dc20c93ab7c19a468b581222b353d8f81e6f954240703ee1d674b371e96171399ddc5424a54db4b09afb4ec8e
