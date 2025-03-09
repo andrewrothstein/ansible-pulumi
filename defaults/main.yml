@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.153.1
+pulumi_ver: v3.154.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -2031,3 +2031,17 @@ pulumi_checksums:
     windows-x64: sha512:5f478faf1734000f690512d820807d7e97b928a351be8df751479deaa80798aed396fd564792143da755d96291457b609385423f6c6d6629d99d91dfffd1af96
     # https://get.pulumi.com/releases/sdk/pulumi-v3.153.1-windows-arm64.zip
     windows-arm64: sha512:1c74bcce827ebc8922392f59e68bf5679fc04e29c473306ea0b6ccc8c37937a32c3fd5c88f4b1dc57c29b5077bbadc267cd72b820fb62c43d25a3cb1bd5e570b
+  # https://github.com/pulumi/pulumi/releases/download/v3.154.0/SHA512SUMS
+  v3.154.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.154.0-linux-arm64.tar.gz
+    linux-arm64: sha512:e3aab2824a1265e86bf693db855443cf4ff57dd52d50aa4790fb511f711797221eec004bd80773bd60deb153afbc6518f92555bc76a480cd1a4ac4de56f6b4c7
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.154.0-linux-x64.tar.gz
+    linux-x64: sha512:eb4819211b69825609511aea51995f5bf3b3a65a89ed0190b280ba4b4d16263f0884f098db06d2cf9c38eb750da07f5deb112afc167099cfba977ff5472e370b
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.154.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:65deea9805116c40bb406c866bba86376941a9c1cacc364f588f23560575ce1e24a1389cc2ae61146343d74c0a4b24b0a06108ac61472c9b5af9be2f15bffdf7
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.154.0-darwin-x64.tar.gz
+    darwin-x64: sha512:94256e073c11564547608c60148557ddcae72ad752368198d52db34c2861ac5b59175f0b3fb1cd381eb8a7d03bc37f94f0adaf41f9735ad905f5b16744fee67f
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.154.0-windows-x64.zip
+    windows-x64: sha512:99d362833a62c330f73ca564f8b35c6371c895717bd8c19757cbf19708bcbb592779c6d7346d380caa6b8ccb28d5abab4513d711b5e586412f3dff49c79ebc77
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.154.0-windows-arm64.zip
+    windows-arm64: sha512:61a16a26bb1fed83c757a4241cc84e2dc84d807b3c4535f49ba8b0db43c636463bc2a01e74711bdb55247d4f7ff2f9b99086225297e72513ae3eb54baef074fe
