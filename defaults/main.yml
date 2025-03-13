@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.154.0
+pulumi_ver: v3.155.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -2045,3 +2045,17 @@ pulumi_checksums:
     windows-x64: sha512:99d362833a62c330f73ca564f8b35c6371c895717bd8c19757cbf19708bcbb592779c6d7346d380caa6b8ccb28d5abab4513d711b5e586412f3dff49c79ebc77
     # https://get.pulumi.com/releases/sdk/pulumi-v3.154.0-windows-arm64.zip
     windows-arm64: sha512:61a16a26bb1fed83c757a4241cc84e2dc84d807b3c4535f49ba8b0db43c636463bc2a01e74711bdb55247d4f7ff2f9b99086225297e72513ae3eb54baef074fe
+  # https://github.com/pulumi/pulumi/releases/download/v3.155.0/SHA512SUMS
+  v3.155.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.155.0-linux-arm64.tar.gz
+    linux-arm64: sha512:06ff4b665fdf087c511650749117a8602d2f2628d1247e6e6d5d0655672b5cee1d24e70d3dcb0ea511dc7ad26ce40159cbc3aad7e436dcdb333292ac607a6073
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.155.0-linux-x64.tar.gz
+    linux-x64: sha512:89dff5ea9c0579a3be715f27769f4aa485b4b063ae3f26c377e83c60ce40152564252cfff8110a598c24eb5ba920b1dc95db97524a3eeb31e5da555d5de25f73
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.155.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:6daaa3009ce57b21cd26f55e55ca4e54e1d232e8589c08e71d7dd91647f4d196d1087a3faf10ced5916b56aa761457a9d273c9a115fdd2025a7833e1cd7fb4ea
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.155.0-darwin-x64.tar.gz
+    darwin-x64: sha512:489c496617901256eb05f3c43eccc21072b7243317d49cf9f2479980d41b30269c70beffa6350f08bcff7643ab827fb3a7aef1fa055cc18ebbc0ac8da56e6d0e
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.155.0-windows-x64.zip
+    windows-x64: sha512:4f27188a10b1d3ef99562c3612ea2bda9f05c3936edc22894c6f035a67eb7480dfa9863240849d30ff7b2cb913cc4a3176615c345044bcad8aef2957c6cf5b4a
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.155.0-windows-arm64.zip
+    windows-arm64: sha512:c1f230365575b90b550cd3fc5c344e7038c88005fe374aeca3819a8f4fc3bbbac34ee2c9118590a776219f6d81ed4e9f17f3a3efe1f54aed5ab36190f4bfae9b
