@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.155.0
+pulumi_ver: v3.157.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -2059,3 +2059,31 @@ pulumi_checksums:
     windows-x64: sha512:4f27188a10b1d3ef99562c3612ea2bda9f05c3936edc22894c6f035a67eb7480dfa9863240849d30ff7b2cb913cc4a3176615c345044bcad8aef2957c6cf5b4a
     # https://get.pulumi.com/releases/sdk/pulumi-v3.155.0-windows-arm64.zip
     windows-arm64: sha512:c1f230365575b90b550cd3fc5c344e7038c88005fe374aeca3819a8f4fc3bbbac34ee2c9118590a776219f6d81ed4e9f17f3a3efe1f54aed5ab36190f4bfae9b
+  # https://github.com/pulumi/pulumi/releases/download/v3.156.0/SHA512SUMS
+  v3.156.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.156.0-linux-arm64.tar.gz
+    linux-arm64: sha512:e815f14ec538034373d2e298cf35b5a8754ba071273642ca43c56887e37add4e814df9564d9d43a5ae812d13fe68c72035bacfaa844080087a83d547e59a8482
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.156.0-linux-x64.tar.gz
+    linux-x64: sha512:c175e9430965b0a70c1a16a09dcf8901cf3f0801bb39a278ae4863599e756fc39b7250244f4c51c1d4a81df24dc4725faa288fc99c37ef863b3881437b564219
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.156.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:1cc1ab07a4ae574e8a4707048f9dfa3e309b781243e515d3f8260946e9cb4a3ad63b612bac1c877fa6c87b00197cb13613cda69b650156987abf9b28697534ff
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.156.0-darwin-x64.tar.gz
+    darwin-x64: sha512:6434630422d4229bb55feb7827f67f8a95798902ac067eb27cb2922b2cd20010e2c9143a17e970e29f84130445598dd687fa52434c8b5cae69378f5802698587
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.156.0-windows-x64.zip
+    windows-x64: sha512:f0375248702eb54a31c22864f3910d83d21026781e0ecb5d9f6b65cd3ed38c5affcfcb7998313ac6ae92daa37bbef38fa02cc8b85149823975e1dc7b3cd9d2f6
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.156.0-windows-arm64.zip
+    windows-arm64: sha512:e34092727c865c4d184e2cb36bb6d134b2b7e41a4147010a67235f9addddc1c85b5ad683405190de565a457825eda9c06afff903a1244d47b505f6093c87bedc
+  # https://github.com/pulumi/pulumi/releases/download/v3.157.0/SHA512SUMS
+  v3.157.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.157.0-linux-arm64.tar.gz
+    linux-arm64: sha512:e35f72051a02a5f57cf5088a0c6c9c6872b116ffdf74e2c86dfcce17d4a47f04c409c5910c65cc4d78a7bfcbd4f6abaa3395116efbfa79f90c48584f8619fb70
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.157.0-linux-x64.tar.gz
+    linux-x64: sha512:0a376bb307bc246389fd146bcf9cabc57d98c90f5b9fc8211bf374accdc47a1f2c92dd40c7a3059563837aca68e274643aa99d3cdca00f6f091aa1a4af1ca061
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.157.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:75a2e46dc1218eed6365f4345d17c5e7edc1bf76e127d61c741e9f8e9a5bd628dc4a2e330a0e5246fb9c285f54a36db12cd49857f486b7e4d15741ca8fe8c455
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.157.0-darwin-x64.tar.gz
+    darwin-x64: sha512:1d1a3619b7bb6e200f2bb23f0443c516ee06832ac4aad06504fb9afcff9a84191e88b194661ae8f992835bbfcf62fca2677b0e54cc461a88f7aa88f1f8857f30
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.157.0-windows-x64.zip
+    windows-x64: sha512:d86f6dff206a9e03553b027baeeb3f58a3cedc92a15da7d3b03debc1a85bffc529cb8a3b7a937165d8f0ff9bbe26b17660869f7d1cf4f97ab1980f54516e86ef
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.157.0-windows-arm64.zip
+    windows-arm64: sha512:44776453a6ba59308c62c8b0ce58af71eb2e3b1b02d9eca62a4d98c86d496e271d21295d380f71b538e96fc745380a5e517bd6b1f6f6fb87f1dc6585c9e6e5c3
