@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.157.0
+pulumi_ver: v3.158.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -2087,3 +2087,17 @@ pulumi_checksums:
     windows-x64: sha512:d86f6dff206a9e03553b027baeeb3f58a3cedc92a15da7d3b03debc1a85bffc529cb8a3b7a937165d8f0ff9bbe26b17660869f7d1cf4f97ab1980f54516e86ef
     # https://get.pulumi.com/releases/sdk/pulumi-v3.157.0-windows-arm64.zip
     windows-arm64: sha512:44776453a6ba59308c62c8b0ce58af71eb2e3b1b02d9eca62a4d98c86d496e271d21295d380f71b538e96fc745380a5e517bd6b1f6f6fb87f1dc6585c9e6e5c3
+  # https://github.com/pulumi/pulumi/releases/download/v3.158.0/SHA512SUMS
+  v3.158.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.158.0-linux-arm64.tar.gz
+    linux-arm64: sha512:651c9108d8c471ddbe40b3ff6f6036bcd9ec3e78ba476baaf44eadc9ba65ec796fd645bf4fdd2021fc9e6075b0d3db0401b6ae317694efe32af86fd0fa429307
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.158.0-linux-x64.tar.gz
+    linux-x64: sha512:7088251a5ddddfc73d637fa5f21543a6019b3e102c7707a1b63dc736e4eeb3eb82c7bc4c4447d2c458678e2742d6cbf25ebb8b01faa632d08cba8e041122df59
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.158.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:3f3e5784981fd364d90d250762edf2d0b7963f8f9d7bbaea31cbb12502790c2c5e1c00557d37c1eb879614ff1326d471c5eb352d64980c5c4a419d98263aa853
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.158.0-darwin-x64.tar.gz
+    darwin-x64: sha512:0852285d26e34639df21aa142b72978f414f811c3201284fc216c0581e076e437f45102c4fe0324f49fd588e605465bdf04ea9bed4569904b127047c4d1f974c
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.158.0-windows-x64.zip
+    windows-x64: sha512:06aade9ee268a11e693c163ec61688d8252de6c366650b47f94fe2c5296ba40ade2b9e9e5c120c959a22aff5f1cbd6742993fd33a254fabfde1a4092c565cf2b
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.158.0-windows-arm64.zip
+    windows-arm64: sha512:38838c0af1423fb62fae63598ff1ac57114409928924f2e4e807d6e5b00966acd798c3456fcaef3948af6c4883415591becaf3b2b824e8ef86aa2e9f73a8cb0e
