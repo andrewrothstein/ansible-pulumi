@@ -38,4 +38,4 @@ dlver () {
     dl $lchecksums $ver windows arm64 zip
 }
 
-dlver ${1:-3.158.0}
+dlver ${1:-3.160.0}

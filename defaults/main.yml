@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.158.0
+pulumi_ver: v3.160.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -2101,3 +2101,17 @@ pulumi_checksums:
     windows-x64: sha512:06aade9ee268a11e693c163ec61688d8252de6c366650b47f94fe2c5296ba40ade2b9e9e5c120c959a22aff5f1cbd6742993fd33a254fabfde1a4092c565cf2b
     # https://get.pulumi.com/releases/sdk/pulumi-v3.158.0-windows-arm64.zip
     windows-arm64: sha512:38838c0af1423fb62fae63598ff1ac57114409928924f2e4e807d6e5b00966acd798c3456fcaef3948af6c4883415591becaf3b2b824e8ef86aa2e9f73a8cb0e
+  # https://github.com/pulumi/pulumi/releases/download/v3.160.0/SHA512SUMS
+  v3.160.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.160.0-linux-arm64.tar.gz
+    linux-arm64: sha512:44b491d8de255b9a12b02c6c9217ea43fdf153cf9174465f0a740c5583727086bb8b3c07d954ba3f9002cad42ee0399fac6c3940c0f17343c6ff2deae6bde114
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.160.0-linux-x64.tar.gz
+    linux-x64: sha512:162a8b23c7fd59841e6f552b724779bab65d16fcd974a84335aaa6720fe278c3fae0971e4a2e7a31be1d066ebdb9be39b3f884f4d91f8dd2f03a8f46d754a4df
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.160.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:a61f94bcc7de4d41bf2f82d8c8350fae98b0486fa2f45829730c3345916c079b812e5012f09e2a8a9bbaa0ceccbea7457e6c19fd04a2a6cdac5894e84c35dc06
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.160.0-darwin-x64.tar.gz
+    darwin-x64: sha512:c4be00554a7b9bff924b461a8e6b8bd4f192580e5f4d1b522a24619e554fcc736d225a3515ce2c61f4a5126e3ee24a9a2e1d4caefad4277ecf286ec71d34c8a3
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.160.0-windows-x64.zip
+    windows-x64: sha512:a2e8c754f1ad02f88bd922278b97fa682d65d0c96c55f97094ab78ca292f42a6dad13777ac4f30e31d0ca34249d4c214672026a64517266e3afd500b2463ee49
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.160.0-windows-arm64.zip
+    windows-arm64: sha512:0a9abc9fdff59945e73809a81d7d8bd15287b158ebb6bb0c77ed48f9efaa7d9a0bd29d4adad453690e64b01fc9f47ac02af820a16803f1d481ad1560455e1c8d
