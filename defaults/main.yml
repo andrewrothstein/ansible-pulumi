@@ -1,6 +1,6 @@
 ---
 # defaults file for pulumi
-pulumi_ver: v3.160.0
+pulumi_ver: v3.162.0
 pulumi_mirror: https://get.pulumi.com/releases/sdk
 
 pulumi_arch_map:
@@ -2115,3 +2115,17 @@ pulumi_checksums:
     windows-x64: sha512:a2e8c754f1ad02f88bd922278b97fa682d65d0c96c55f97094ab78ca292f42a6dad13777ac4f30e31d0ca34249d4c214672026a64517266e3afd500b2463ee49
     # https://get.pulumi.com/releases/sdk/pulumi-v3.160.0-windows-arm64.zip
     windows-arm64: sha512:0a9abc9fdff59945e73809a81d7d8bd15287b158ebb6bb0c77ed48f9efaa7d9a0bd29d4adad453690e64b01fc9f47ac02af820a16803f1d481ad1560455e1c8d
+  # https://github.com/pulumi/pulumi/releases/download/v3.162.0/SHA512SUMS
+  v3.162.0:
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.162.0-linux-arm64.tar.gz
+    linux-arm64: sha512:3da32693b617a74da6262f4dd3790c91eebc003f1e817f45ed9778f5a0aa44abe1fa6d125364194966ec4bb7b3db974f2cedb9e75c6cf2312b42bce9e6c3127a
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.162.0-linux-x64.tar.gz
+    linux-x64: sha512:22d4fd8e2debb5b49ce0890f4485f98ba590a39074861da79f6f790609475f9a44d8edca46a06b09f645223c97122a3037ef714aeaad44481e0392e09024c31a
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.162.0-darwin-arm64.tar.gz
+    darwin-arm64: sha512:16da87ab0331f3b4296afb37e1b9c065ca2975b9a04d4686300fa7feb4c6c41c2b442412afb413795e65bf73476224255f17c72316ed43d9f2e9845db20b3b95
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.162.0-darwin-x64.tar.gz
+    darwin-x64: sha512:62e891fa08b897cc8547ce27d0d6be16aea48f18b53b31e2b57d61170b18648facc23d29c2b3d48f1329922f6fedfa303470b091bb8fcacaac7ec9c63c0a3fa3
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.162.0-windows-x64.zip
+    windows-x64: sha512:d15ebe860517a8b67a8eb4b0d90ee2566a6f8513456eebb56ba6730f5367ee91e71ac33c2b660e23c6295d814667a52dcd048486594e436d8f65d2e1ee83e56d
+    # https://get.pulumi.com/releases/sdk/pulumi-v3.162.0-windows-arm64.zip
+    windows-arm64: sha512:4a13e17c0013accc303a9a22385389fe571180cb506c396626cc347cdbef00b7f6c6fedff4222a1c1f7ae1a6580e23576a382f2b5e026792d1e4baee04dc28f6
